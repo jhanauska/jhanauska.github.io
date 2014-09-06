@@ -1,10 +1,14 @@
 /**
  * Site header
  */
+.topbar {
+    border-bottom: 1px inset #BBB;
+}
 .site-header {
+    background-color: #EFEFEF;
     border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+    box-shadow: 2px 0px 12px 0px #338;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -17,14 +21,39 @@
     margin-bottom: 0;
     float: left;
 
-    &,
     &:visited {
-        color: $grey-color-dark;
+        color: white;   
     }
+}
+.title-img {
+    width: 150px;
+    height: 60px;
+    background-image: url("/assets/TitleImg.png");
+    background-size: 150px;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.title-sub {
+    font-family: 'fertigo_proregular', Arial, sans-serif;
+    color: white;
+    font-outline: 1px solid #AAA;
+    font-size: 1.6em;
+    line-height: 60px;
+    text-shadow:
+    -1px -1px 0 #BBB,  
+    1px -1px 0 #BBB,
+    -1px 1px 0 #BBB,
+    1px 1px 0 #BBB;
+}
+
+.search-bar {
+    float: right;
 }
 
 .site-nav {
-    float: right;
+    float: left;
     line-height: 56px;
 
     .menu-icon {
@@ -32,9 +61,20 @@
     }
 
     .page-link {
+        padding: 5px 10px;
+        display: inline-block;
+        height: 20px;
         color: $text-color;
         line-height: $base-line-height;
+        font-size: .75em;
+        float: left;
+        border-radius: 5px;
 
+        
+        &:hover {
+            text-decoration: none;
+            @include diagBg1;            
+        }
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
@@ -86,7 +126,45 @@
     }
 }
 
+.home {
+    width: 100%;
+    height: 325px;
+    padding: 30px;
+    @include radialBg1;
+    background-color: 2073ac;
+}
 
+.featText {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: normal;
+    color: white;
+    float: left;
+    width: 42%;
+    @extend %clearfix;
+    h1 {
+        font-size: 2.5em;
+    }
+    h2{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1em;
+    }
+    h3{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: .7em;
+        margin: 0px;
+    }
+    h4{
+        font-family: 'Open Sans', sans-serif;
+        font-size: .7em;
+        margin: 0px 0px 35px 0px;
+    }
+}
+
+#featuredImg {
+    float: left;
+    width: 53%;
+}
 
 /**
  * Site footer
@@ -162,7 +240,6 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
 }
 
 .page-heading {
