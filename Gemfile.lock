@@ -120,6 +120,5 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  bundler
   fiddle
   jekyll
