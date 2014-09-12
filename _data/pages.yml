@@ -1,5 +1,0 @@
-          {% for page in site.pages %}
-          {% if page.title %}
-          {{ page.num}} {{ page.title | upcase }}
-          {% endif %}
-        {% endfor %}
