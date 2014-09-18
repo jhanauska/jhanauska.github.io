@@ -108,25 +108,15 @@ dl, dd, ol, ul, figure {
   background: -o-linear-gradient(left, #d1d3d3, #8f9292);
 }
 @mixin linearBg3 {
-  /* fallback */
-  background-color: #e8a40c;
-  background-image: url(images/linear_bg_1.png);
-  background-repeat: repeat-y;
+    background: #ebaf0d; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #ebaf0d 16%, #d86f00 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(16%,#ebaf0d), color-stop(100%,#d86f00)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #ebaf0d 16%,#d86f00 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #ebaf0d 16%,#d86f00 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #ebaf0d 16%,#d86f00 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #ebaf0d 16%,#d86f00 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebaf0d', endColorstr='#d86f00',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-  /* Safari 4-5, Chrome 1-9 */
-  background: -webkit-gradient(linear, left top, right bottom, from(#d15b07), to(#e8a40c));
-
-  /* Safari 5.1, Chrome 10+ */
-  background: -webkit-linear-gradient(left, #e8a40c, #d15b07);
-
-  /* Firefox 3.6+ */
-  background: -moz-linear-gradient(left, #e8a40c, #d15b07);
-
-  /* IE 10 */
-  background: -ms-linear-gradient(left, #e8a40c, #d15b07);
-
-  /* Opera 11.10+ */
-  background: -o-linear-gradient(left, #e8a40c, #d15b07);
 }
 /**
  * Basic styling

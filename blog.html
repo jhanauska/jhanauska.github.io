@@ -1,23 +1,49 @@
 ---
-layout: page
+layout: default
 title: Blog
 num: 5
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-  <p class="rss-subscribe">subscribe<a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div class="internalpage">
+    <aside>
+        <h1 class="aside-heading">THE BLOG</h1>
+        <nav>
+            <ul>
+                <li>GENERAL</li>
+                <li>DESIGN</li>
+                <li>DEVELOPMENT</li>
+                <li>CODING</li>
+                <li>LIFESTYLE</li>
+                <li>FATHERFOOD</li>
+            </ul>
+        </nav>
+        <h2>Subscribe</h2>
+        <p>RSS Feed</p>
+        <p>Email Updates</p>
+        <img src="assets/readerstat.png" alt="Reader Stats">
+        <div class="image-block">
+            <img src="assets/flickr1.png" alt="Flickr 1">
+            <img src="assets/flickr2.png" alt="Flickr 2">
+            <img src="assets/flickr3.png" alt="Flickr 3">
+            <img src="assets/flickr4.png" alt="Flickr 4">
+        </div>
+        <p><img src="assets/flickrlogo.png" alt="Flickr Logo"> Join Our Flickr Group<br>To Share Your Work</p>
+    </aside>
+    <article>
+        <h1 class="blog-head">Ordered and Unordered Lists</h1>
+        <h2>published on <emphasis>22.01.2009</emphasis> in <strong>Websites</strong> tagged <strong>Themeforest</strong>, <strong>Corporate</strong></h2>
+        <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. <a href="#">Read more</a></p>
+        <hr>
+        <h1 class="blog-head">Save $30 with a Yearly Subscription to Plus</h1>
+        <h2>published on <emphasis>22.01.2009</emphasis> in <strong>Websites</strong> tagged <strong>Themeforest</strong>, <strong>Corporate</strong></h2>
+        <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. <a href="#">Read more</a></p>
+        <hr>
+        <h1 class="blog-head">How to Become a Freelance Web Developer</h1>
+        <h2>published on <emphasis>22.01.2009</emphasis> in <strong>Websites</strong> tagged <strong>Themeforest</strong>, <strong>Corporate</strong></h2>
+        <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. <a href="#">Read more</a></p>
+        <hr>
+        <h1 class="blog-head">Make an iPhone App Using the Envato API</h1>
+        <h2>published on <emphasis>22.01.2009</emphasis> in <strong>Websites</strong> tagged <strong>Themeforest</strong>, <strong>Corporate</strong></h2>
+        <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. <a href="#">Read more</a></p>
+    </article>
 </div>

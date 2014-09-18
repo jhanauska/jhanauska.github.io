@@ -1,23 +1,53 @@
 ---
-layout: page
+layout: default
 title: Contact
 num: 6
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-  <p class="rss-subscribe">subscribe<a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div class="internalpage">
+    <aside>
+        <div class="aside-top">
+            <h1 class="aside-heading">Office Europe</h1>
+            <h2>Phone:</h2>
+            <p>+4568 65 9 66</p>
+            <h2>Fax:</h2>
+            <p>+4568 95 6 5</p>
+            <p><strong>Email:</strong> adress@adress.com</p>
+            <h1 class="aside-heading">Office Asia</h1>
+            <h2>Phone:</h2>
+            <p>+4568 65 9 66</p>
+            <h2>Fax:</h2>
+            <p>+4568 95 6 5</p>
+            <p><strong>Email:</strong> adress@adress.com</p>
+        </div>
+            <h1>Something about our<br><strong>web design</strong></h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris eget dolor. 
+<br>
+Phasellus elementum accumsan risus. Mauris eget dolor. 
+<br>
+Phasellus elementum accumsan risus</p>
+    </aside>
+    <article>
+        <h1 class="page-heading">Contact</h1>
+        <h2>We can answer all your question</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris eget dolor. Phasellus <strong>elementum</strong>strong> accumsan risus. Mauris eget dolor.
+<br>
+Phasellus elementum <strong>accumsan risu</strong>
+        </p>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Subject">
+            <input type="textarea" placeholder="Message">
+            <button type="submit">SEND</button>
+        </form>
+        <h2>Find us via Google Maps</h2>
+        <img src="assets/googlemaps.png" alt="Google Maps">
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris eget dolor. Phasellus <strong>elementum</strong>strong> accumsan risus. Mauris eget dolor.
+<br>
+Phasellus elementum <strong>accumsan risu</strong>
+        </p>
+    </article>
 </div>

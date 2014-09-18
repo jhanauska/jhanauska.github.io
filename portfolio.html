@@ -1,23 +1,65 @@
 ---
-layout: page
+layout: default
 title: Portfolio
 num: 4
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-  <p class="rss-subscribe">subscribe<a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div class="internalpage">
+    <aside>
+        <h1 class="aside-heading">CATEGORIES</h1>
+        <nav>
+            <ul>
+                <li>WEB DESIGN</li>
+                <li>PRINT DESIGN</li>
+                <li>MOTION</li>
+                <li>MULTIMEDIA</li>
+                <li>OTHER</li>
+            </ul>
+        </nav>
+            <h1>Something about our<br><strong>web design</strong></h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris eget dolor. 
+<br>
+Phasellus elementum accumsan risus. Mauris eget dolor. 
+<br>
+Phasellus elementum accumsan risus</p>
+    </aside>
+    <article>
+        <h1 class="page-heading">Portfolio</h1>
+        <div class="first-portfolio-entry">
+        <img src="assets/portfolioimg1.png" alt="Portfolio Image 1">
+        <h2>Idea - business design</h2>
+         <h3>in <strong>Websites</strong> tagged <strong>Themeforest</strong>, <strong>Corporate</strong></h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris eget dolor. 
+Phasellus elementum accumsan risus
+        <br>
+         Proin commodo, magna at mattis posuere, orci justo molestie nunc, vel vestibulum orci leo ut libero. 
+Donec aliquam venenatis tortor. Etiam ac enim.   
+        </p>
+        </div>
+        <div class="first-portfolio-entry">
+        <img src="assets/portfolioimg2.png" alt="Portfolio Image 1">
+        <h2>PRO desing</h2>
+        <p>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris eget dolor. Phasellus elementum accumsan risus. 
+Mauris eget dolor. Phasellus elementum accumsan risus.  
+        </p>
+        </div>
+        <div class="first-portfolio-entry">
+        <img src="assets/portfolioimg3.png" alt="Portfolio Image 1">
+        <h2>Freelance designer</h2>
+        <p>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris eget dolor. Phasellus elementum accumsan risus. 
+Mauris eget dolor. Phasellus elementum accumsan risus.  
+        </p>
+        </div>
+        <div class="first-portfolio-entry">
+        <img src="assets/portfolioimg4.png" alt="Portfolio Image 1">
+        <h2>Awesomeness</h2>
+        <p>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris eget dolor. Phasellus elementum accumsan risus. 
+Mauris eget dolor. Phasellus elementum accumsan risus.  
+        </p>
+        </div>
+    </article>
 </div>
