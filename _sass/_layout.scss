@@ -29,7 +29,7 @@
 .title-img {
     width: 150px;
     height: 60px;
-    background-image: url("/assets/TitleImg.png");
+    background-image: url("/icons/TitleImg.png");
     background-size: 150px;
     background-repeat: no-repeat;
     margin-right: 5px;
@@ -83,8 +83,7 @@
             border-width: 1px;
             border-color: rgb(206, 126, 1);
             border-radius: 5px;
-            background-color: #f7ae3a;
-            box-shadow: inset 3.5px 6.062px 6px 0px rgba(#fef494, 1);          
+            @include diagBg1;
             //@include diagBg1;            
         }
         // Gaps between nav items, but not on the first one
@@ -222,7 +221,6 @@
 .main-content {
     width: 100%;
     padding: 30px;
-    border: 1px solid #555;
 }
 
 /**
@@ -325,7 +323,57 @@
     font-size: 24px;
 }
 
+.tab-container {
+    width: 100%;
+    height: 75px;
 
+    div:first-child {
+    border-top-left-radius: 10px;   
+    }
+    div:last-child {
+    border-top-right-radius: 10px;   
+    }
+}
+
+.faux-tab {
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    height: 75px;
+    border: 1px solid #AAA;
+    background-color: #DDD;
+    color: #AAA;
+    img {
+        margin: 5px;
+        float: left;
+    }
+    
+    h1 {
+        float: left;
+        margin: 10px 10px 5px;
+        font-size: 1.2em;
+        font-family: "Open Sans Condensed", sans-serif;
+        line-height: 1.2em;
+    }
+    p {
+        font-family: "open sans", sans-serif;
+        float: left;
+        margin-left: 10px;
+        font-size: .7em;
+    }
+    
+    &:hover {
+        background-color: #FFF;
+        
+        h1 {
+        color: #F60; 
+        }
+        
+        p {
+        color: #000;            
+        }
+    }
+}
 
 /**
  * Posts
@@ -381,11 +429,11 @@ ul {
 }
 
 .rec-comments {
-    list-style: url(/assets/speechBubbles.png);
+    list-style: url(/icons/speechBubbles.png);
 }
 
 .lat-blog {
-    list-style: url(/assets/dateimg.png);
+    list-style: url(/icons/dateimg.png);
 }
 
 .foot-cont-block {
