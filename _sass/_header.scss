@@ -1,0 +1,157 @@
+/**
+ * Site header
+ */
+.topbar {
+    border-bottom: 1px inset #BBB;
+}
+.site-header {
+    background-color: #EFEFEF;
+    border-top: 5px solid $grey-color-dark;
+    min-height: 56px;
+    box-shadow: 2px 0px 12px 0px #338;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+}
+
+.site-title {
+    font-size: 26px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+
+    &:visited {
+        color: white;   
+    }
+}
+.title-img {
+    width: 150px;
+    height: 60px;
+    background-image: url("/icons/TitleImg.png");
+    background-size: 150px;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.title-sub {
+    font-family: 'fertigo_proregular', Arial, sans-serif;
+    color: white;
+    font-outline: 1px solid #AAA;
+    font-size: 1.6em;
+    line-height: 60px;
+    text-shadow:
+    -1px -1px 0 #BBB,  
+    1px -1px 0 #BBB,
+    -1px 1px 0 #BBB,
+    1px 1px 0 #BBB;
+}
+
+.search-bar {
+    margin-top: 15px;
+    float: right;
+}
+.navbar {
+    padding-top: 10px;
+    height: 35px;
+}
+.site-nav {
+    float: left;
+    line-height: 56px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        padding: 5px 10px;
+        display: inline-block;
+        height: 15px;
+        color: #848484;
+        line-height: $base-line-height;
+        font-size: .75em;
+        float: left;
+        border-radius: 5px;
+
+        
+        &:hover {
+            border-style : Solid;
+            border-color : #CD8129;
+            border-color : rgba(205, 129, 41, 1);
+            border-width : 1px;
+            -moz-border-radius : 5px;
+            -webkit-border-radius : 5px;
+            text-decoration: none;
+            color: #7b3500;
+            border-radius: 5px;
+          @include navbtnbg;
+          //@include diagBg1;
+        }
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 9px;
+        right: 30px;
+        background-color: $background-color;
+        border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        text-align: right;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+
+            > svg {
+                width: 18px;
+                height: 15px;
+
+                path {
+                    fill: $grey-color-dark;
+                }
+            }
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+        }
+    }
+}
+
+.loginItem {
+    float: right;
+    font-family: 'Open Sans ', sans-serif;
+    font-weight: bold;
+    font-size: .7em;
+    button {
+        border-radius: 5px;
+        height: 27px;
+        width: 75px;
+        font-size: 1.1em;
+        color: white;
+        background-color: #2fa7d6;
+        box-shadow: inset 0 0 10px #1f7bc1;
+        padding: 5px;
+    }
+}

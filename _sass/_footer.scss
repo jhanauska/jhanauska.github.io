@@ -1,0 +1,215 @@
+
+.footer-content {
+    background-color: #4b4d4a;
+}
+
+ul {
+    list-style: none;
+}
+
+.rec-comments {
+}
+
+.lat-blog {
+    li {
+      background-image: url("../icons/dateimg.png") no-repeat;
+      background-position: 10px 15px;
+      background-size: 15px ;
+      height: 20px;
+      line-height: 20px;
+    }
+  
+}
+
+.foot-cont-block {
+    font-family: "Open Sans", sans-serif;
+    color: #DDD;
+    float: left;
+    width: 23%;
+    margin: 1%;
+    position: relative;
+    h1 {
+        font-family: "Open Sans Condensed", sans-serif;
+        font-size: 1em;
+        border-bottom: 1px solid #DDD;
+    }
+    li {
+        
+        h2 {
+          height: 20px;
+          line-height: 20px;
+            font-size: .7em;
+        }
+
+    }
+        p {
+            font-size: .6em;
+        }
+}
+
+.ad-img {
+    width: 40%;
+    margin: 5px;
+}
+
+.orange {
+    color: $orange-color-dark;   
+}
+.tweet {
+    box-sizing: border-box;
+    width: 100%;
+    height: 120px;
+    background-color: #EEE;
+    border-radius: 5px;
+    position: relative;
+    font-style: italic;
+    padding: 10px;
+    font-weight: bold;
+    
+    h2 {
+        font-weight: bold;
+        color: $orange-color-dark;
+        font-size: .8em;
+        margin-bottom: 2px;
+    }
+    
+    p {
+        color: #444;
+        font-size: .8em;
+    }
+    
+    &:after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        left: 150px;
+        top: 100%;
+        border-top: 10px solid #EEE;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+    }
+    
+}
+
+.tweetlink {
+    color: #BBB;
+    font-size: .6em;
+    text-decoration: underline;
+}
+
+.tweetImg {
+    position: absolute;
+    left: 90px;
+    top: 180px;
+    width: 100px;
+}
+
+.footInfo {
+    float: left;
+    margin-top: 15px;
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-size: .7em; 
+    color: #999;
+    line-height: 1em;
+}
+.footTitle {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.foot-nav {
+    display: inline-block;
+    margin-left: 50px;
+}
+.foot-nav-link {
+        padding: 5px 10px;
+        display: inline-block;
+        height: 15px;
+        color: #999;
+        line-height: $base-line-height;
+        font-size: .6em;
+        float: left;
+        border-radius: 5px;
+        margin-top: 10px;
+
+        
+        &:hover {
+            text-decoration: none;
+            @include diagBg1;            
+        }
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 10px;
+        }
+}
+
+/**
+ * Site footer
+ */
+.site-footer {
+    border-top: 1px solid #dcdcda;
+    padding-top: 10px;
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-col-wrapper {
+    font-size: 15px;
+    color: $grey-color;
+    margin-left: -$spacing-unit / 2;
+    @extend %clearfix;
+}
+
+.footer-col {
+    float: left;
+    margin-bottom: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+    width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+    width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+    .footer-col-1,
+    .footer-col-2 {
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width:         calc(50% - (#{$spacing-unit} / 2));
+    }
+
+    .footer-col-3 {
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+@include media-query($on-palm) {
+    .footer-col {
+        float: none;
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
