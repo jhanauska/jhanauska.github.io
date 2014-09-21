@@ -8,15 +8,35 @@ ul {
 }
 
 .rec-comments {
+    h2 {
+      background-image: url("../icons/speechbubbles.png");
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
+      background-size: 25px;
+      height: 20px;
+      line-height: 20px;
+      padding-left: 35px;
+      font-size: .7em;
+      margin-bottom: 5px;
+    }
+    p {
+      padding-left: 30px;      
+    }
+  
+  
 }
 
 .lat-blog {
-    li {
-      background-image: url("../icons/dateimg.png") no-repeat;
-      background-position: 10px 15px;
-      background-size: 15px ;
+    h2 {
+      background-image: url("../icons/dateimg.png");
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
+      background-size: 40px;
       height: 20px;
       line-height: 20px;
+      padding-left: 50px;
+      font-size: .7em;
+      margin-bottom: 5px;
     }
   
 }
@@ -48,8 +68,8 @@ ul {
 }
 
 .ad-img {
-    width: 40%;
-    margin: 5px;
+    width: 45%;
+    margin: 2% 2% 5%;
 }
 
 .orange {
