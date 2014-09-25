@@ -1,4 +1,6 @@
+<!-- Start of Header -->
 <header class="site-header">
+<!-- Top Bar -->
   <div class="topbar">
     <div class="wrapper">
       <a class="site-title title-img" href="{{ site.baseurl }}/"></a>
@@ -6,6 +8,8 @@
       <img class="search-bar" src="icons/SearchBar.png" alt="Search Bar">
     </div>
   </div>
+<!-- End of Top Bar -->
+<!-- Nav Bar -->
   <div class="navbar">
     <div class="wrapper">
       <nav class="site-nav">
@@ -16,6 +20,7 @@
             <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
           </svg>
         </a>
+<!-- Navigation Call Function -->
         <div class="trigger">  
           {% assign num = 10 %}
           {% for i in (1..num) %}
@@ -26,8 +31,11 @@
           {% endfor %}
           {% endfor %}
         </div>
+<!-- End of Navigation Call Function -->
       </nav>
       <p class="loginItem">Login or <button>SIGN UP</button></p>
     </div>
   </div>
+<!-- End of Nav Bar -->
 </header>
+<!-- End of Header -->
